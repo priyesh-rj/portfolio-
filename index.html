@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Priyesh Raj | PGT Computer Science, IT & AI Educator</title>
+  <meta name="description" content="Portfolio of Priyesh Raj, PGT Computer Science, IT & AI Teacher, and STEM Educator. Explore interactive curriculums, projects, education timeline, and contact information.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="dark-theme">
+  <!-- Interactive Background Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-accent">&lt;</span>Priyesh.Raj<span class="logo-accent">/&gt;</span>
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#lab" class="nav-link">Teaching Lab</a>
+        <a href="#experience" class="nav-link">Timeline</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link btn-contact">Get in Touch</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>PGT A.I & STEM Teacher</span>
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">Priyesh Raj</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            <span id="typing-text"></span><span class="cursor">|</span>
+          </h2>
+          <p class="hero-description">
+            Empowering students with cutting-edge knowledge in coding, artificial intelligence, and engineering design. Shaping future innovators through hands-on STEM education.
+          </p>
+          <div class="hero-actions">
+            <a href="#lab" class="btn btn-primary">Enter Teaching Lab <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-secondary">Contact Details</a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/priyesh-rj" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:hiipriyesh@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="tel:+916393373865" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            <a href="#contact" aria-label="Location"><i class="fas fa-map-marker-alt"></i></a>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="avatar-frame" id="avatar-frame">
+            <div class="glow-layer"></div>
+            <img src="/assets/avatar.jpg" alt="Priyesh Raj - PGT Teacher" class="avatar-img">
+            <div class="frame-tag">&lt;Code /&gt;</div>
+            <div class="frame-tag tech-tag">Python & AI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Profile Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01. About Me</span>
+          <h2 class="section-title">Academic Profile</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text-card glass-card">
+            <h3 class="card-title">Professional Statement</h3>
+            <p>
+              Dedicated and enthusiastic Computer Science and Artificial Intelligence teacher. Experienced in teaching students, preparing comprehensive lesson plans, conducting rigorous practical sessions, and guiding learners in computer applications, programming paradigms, and emerging technologies.
+            </p>
+            <p>
+              Passionate about creating an engaging learning environment that encourages critical thinking, creativity, and problem-solving skills. Committed to supporting students' academic growth and helping them develop the knowledge and confidence needed for future success.
+            </p>
+          </div>
+          
+          <div class="skills-mini-card glass-card">
+            <h3 class="card-title">Core Philosophies</h3>
+            <div class="philosophies-list">
+              <div class="philosophy-item">
+                <div class="ph-icon"><i class="fas fa-brain"></i></div>
+                <div class="ph-content">
+                  <h4>AI Literacy</h4>
+                  <p>Equipping students with analytical skills to understand neural networks and machine learning ethics.</p>
+                </div>
+              </div>
+              <div class="philosophy-item">
+                <div class="ph-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="ph-content">
+                  <h4>Hands-on Learning</h4>
+                  <p>Writing algorithms, constructing databases, and testing models actively instead of passive reading.</p>
+                </div>
+              </div>
+              <div class="philosophy-item">
+                <div class="ph-icon"><i class="fas fa-microchip"></i></div>
+                <div class="ph-content">
+                  <h4>STEM Collaboration</h4>
+                  <p>Linking CS with hardware through IoT microcontrollers, sensors, and mechanical prototypes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="soft-skills-container">
+          <h3 class="subsection-title">Core Interpersonal Strengths</h3>
+          <div class="soft-skills-grid">
+            <span class="soft-skill-tag"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+            <span class="soft-skill-tag"><i class="fas fa-comments"></i> Communication</span>
+            <span class="soft-skill-tag"><i class="fas fa-users"></i> Team Collaboration</span>
+            <span class="soft-skill-tag"><i class="fas fa-sliders-h"></i> Adaptability</span>
+            <span class="soft-skill-tag"><i class="fas fa-bolt"></i> Quick Learning</span>
+            <span class="soft-skill-tag"><i class="fas fa-clock"></i> Time Management</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Interactive Teaching Lab Section -->
+    <section id="lab" class="section lab-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02. Interactive Curriculum Hub</span>
+          <h2 class="section-title">The Teaching Lab</h2>
+        </div>
+        
+        <div class="lab-dashboard glass-card">
+          <!-- Left/Top Navigation Sidebar -->
+          <div class="lab-tabs">
+            <button class="lab-tab-btn active" data-subject="cs">
+              <span class="subject-color-indicator cs-color"></span>
+              <i class="fab fa-python tab-icon"></i>
+              <div class="tab-label">
+                <span class="tab-title">Computer Science</span>
+                <span class="tab-desc">Python & DBMS</span>
+              </div>
+            </button>
+            <button class="lab-tab-btn" data-subject="ai">
+              <span class="subject-color-indicator ai-color"></span>
+              <i class="fas fa-brain tab-icon"></i>
+              <div class="tab-label">
+                <span class="tab-title">Artificial Intel.</span>
+                <span class="tab-desc">ML & Neural Networks</span>
+              </div>
+            </button>
+            <button class="lab-tab-btn" data-subject="ip">
+              <span class="subject-color-indicator ip-color"></span>
+              <i class="fas fa-database tab-icon"></i>
+              <div class="tab-label">
+                <span class="tab-title">Informatics Prac.</span>
+                <span class="tab-desc">Data Management</span>
+              </div>
+            </button>
+            <button class="lab-tab-btn" data-subject="it">
+              <span class="subject-color-indicator it-color"></span>
+              <i class="fas fa-desktop tab-icon"></i>
+              <div class="tab-label">
+                <span class="tab-title">Information Tech.</span>
+                <span class="tab-desc">Web, HTML & Office</span>
+              </div>
+            </button>
+            <button class="lab-tab-btn" data-subject="stem">
+              <span class="subject-color-indicator stem-color"></span>
+              <i class="fas fa-tools tab-icon"></i>
+              <div class="tab-label">
+                <span class="tab-title">STEM Lab</span>
+                <span class="tab-desc">IoT & Electronics</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Right/Bottom Panel Content -->
+          <div class="lab-content-area">
+            <!-- Computer Science Tab Content -->
+            <div class="lab-panel active" id="panel-cs">
+              <div class="panel-layout">
+                <div class="panel-info">
+                  <div class="subject-header">
+                    <span class="panel-badge cs-badge">Python Core & OOP</span>
+                    <h3>Computer Science (CS)</h3>
+                  </div>
+                  <p class="panel-text">
+                    Focuses on advanced programming structure, Python concepts, Object-Oriented Programming (OOP), file handling, data structures (stacks, queues), and understanding computer architecture fundamentals.
+                  </p>
+                  <h4 class="curriculum-heading">Key Topics Taught:</h4>
+                  <ul class="curriculum-list">
+                    <li><i class="fas fa-check-circle"></i> Python Programming: Functions, Modules & Libraries</li>
+                    <li><i class="fas fa-check-circle"></i> File Handling: Text, Binary, and CSV Files</li>
+                    <li><i class="fas fa-check-circle"></i> Data Structures: Stacks implementation in Python</li>
+                    <li><i class="fas fa-check-circle"></i> Computer Networks: Protocols, Topologies & Network Security</li>
+                    <li><i class="fas fa-check-circle"></i> Database Concepts: SQL commands & constraints</li>
+                  </ul>
+                </div>
+                
+                <div class="panel-demo">
+                  <div class="demo-box glass-card border-cs">
+                    <div class="demo-header">
+                      <span class="demo-dot red"></span>
+                      <span class="demo-dot yellow"></span>
+                      <span class="demo-dot green"></span>
+                      <span class="demo-title">interactive_visualizer.py</span>
+                    </div>
+                    <div class="demo-body code-font">
+                      <div class="code-line"><span class="c-keyword">def</span> <span class="c-func">bubble_sort</span>(arr):</div>
+                      <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;n = <span class="c-func">len</span>(arr)</div>
+                      <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-keyword">for</span> i <span class="c-keyword">in</span> <span class="c-func">range</span>(n):</div>
+                      <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-keyword">for</span> j <span class="c-keyword">in</span> <span class="c-func">range</span>(<span class="c-num">0</span>, n-i-<span class="c-num">1</span>):</div>
+                      <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-keyword">if</span> arr[j] &gt; arr[j+<span class="c-num">1</span>]:</div>
+                      <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[j], arr[j+<span class="c-num">1</span>] = arr[j+<span class="c-num">1</span>], arr[j]</div>
+                      <div class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c-keyword">return</span> arr</div>
+                      <div class="code-line"></div>
+                      <div class="code-line">data = [<span class="c-num">64</span>, <span class="c-num">34</span>, <span class="c-num">25</span>, <span class="c-num">12</span>, <span class="c-num">22</span>]</div>
+                      <div class="code-line"><span class="c-func">print</span>(<span class="c-string">"Sorted Array:"</span>, bubble_sort(data))</div>
+                    </div>
+                    <div class="demo-footer">
+                      <button class="btn btn-demo-run" id="btn-run-cs">Run Code <i class="fas fa-play"></i></button>
+                      <div class="demo-output-box" id="output-cs">
+                        <span class="output-placeholder">&gt;_ Output will appear here...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Artificial Intelligence Tab Content -->
+            <div class="lab-panel" id="panel-ai">
+              <div class="panel-layout">
+                <div class="panel-info">
+                  <div class="subject-header">
+                    <span class="panel-badge ai-badge">Neural Nets & Ethics</span>
+                    <h3>Artificial Intelligence (AI)</h3>
+                  </div>
+                  <p class="panel-text">
+                    Introducing secondary and senior students to Machine Learning paradigms, Deep Learning, Natural Language Processing (NLP), Computer Vision, and the crucial social and ethical implications of AI.
+                  </p>
+                  <h4 class="curriculum-heading">Key Topics Taught:</h4>
+                  <ul class="curriculum-list">
+                    <li><i class="fas fa-check-circle"></i> AI Domains: Computer Vision, NLP & Data Science</li>
+                    <li><i class="fas fa-check-circle"></i> Machine Learning Algorithms: Regression & Classification</li>
+                    <li><i class="fas fa-check-circle"></i> Neural Network Architecture (Neurons, Weights, Activation)</li>
+                    <li><i class="fas fa-check-circle"></i> AI Ethics, Bias in Algorithms, and Future Perspectives</li>
+                    <li><i class="fas fa-check-circle"></i> Building AI Mockups using Python & No-code Tools</li>
+                  </ul>
+                </div>
+                
+                <div class="panel-demo">
+                  <div class="demo-box glass-card border-ai">
+                    <div class="demo-header">
+                      <span class="demo-title"><i class="fas fa-brain"></i> Interactive AI Neural Network Simulator</span>
+                    </div>
+                    <div class="demo-body-ai">
+                      <div class="neural-network-viz" id="nn-viz">
+                        <svg id="nn-svg" width="100%" height="150px"></svg>
+                      </div>
+                      <div class="training-controls">
+                        <button class="btn btn-demo-run" id="btn-train-ai">Train Epoch <i class="fas fa-redo"></i></button>
+                        <div class="training-stats">
+                          <div>Epoch: <span id="epoch-val" class="code-font highlight-ai">0</span></div>
+                          <div>Loss: <span id="loss-val" class="code-font highlight-ai">0.9542</span></div>
+                        </div>
+                      </div>
+                      <div class="loss-chart-container">
+                        <canvas id="loss-canvas" height="60px"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Informatics Practices Tab Content -->
+            <div class="lab-panel" id="panel-ip">
+              <div class="panel-layout">
+                <div class="panel-info">
+                  <div class="subject-header">
+                    <span class="panel-badge ip-badge">Pandas & Databases</span>
+                    <h3>Informatics Practices (IP)</h3>
+                  </div>
+                  <p class="panel-text">
+                    Focused on handling business datasets, data analysis, database management, and data visualization. Practical sessions teach Python data libraries alongside relational database management.
+                  </p>
+                  <h4 class="curriculum-heading">Key Topics Taught:</h4>
+                  <ul class="curriculum-list">
+                    <li><i class="fas fa-check-circle"></i> Data Handling using Pandas: Series & DataFrames</li>
+                    <li><i class="fas fa-check-circle"></i> Data Visualization: Matplotlib line plots, bar charts & histograms</li>
+                    <li><i class="fas fa-check-circle"></i> Database Queries: Group By, Order By, Joins in MySQL</li>
+                    <li><i class="fas fa-check-circle"></i> Cyber Ethics: Intellectual Property Rights (IPR), Cyber Crime</li>
+                    <li><i class="fas fa-check-circle"></i> E-Waste Hazards and Digital Footprint Management</li>
+                  </ul>
+                </div>
+                
+                <div class="panel-demo">
+                  <div class="demo-box glass-card border-ip">
+                    <div class="demo-header">
+                      <span class="demo-title"><i class="fas fa-database"></i> SQL Query Console</span>
+                    </div>
+                    <div class="demo-body sql-panel">
+                      <div class="sql-schema code-font">
+                        <strong>Table: Students</strong> (ID, Name, Grade, Score)
+                      </div>
+                      <div class="sql-input-area">
+                        <select id="sql-query-select" class="code-font">
+                          <option value="q1">SELECT Name, Score FROM Students WHERE Grade = 'A';</option>
+                          <option value="q2">SELECT Grade, AVG(Score) FROM Students GROUP BY Grade;</option>
+                          <option value="q3">SELECT * FROM Students ORDER BY Score DESC;</option>
+                        </select>
+                      </div>
+                      <button class="btn btn-demo-run" id="btn-run-sql">Execute SQL <i class="fas fa-terminal"></i></button>
+                      <div class="sql-result-box code-font" id="sql-result">
+                        <span class="output-placeholder">&gt;_ Run query to inspect query result...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Information Technology Tab Content -->
+            <div class="lab-panel" id="panel-it">
+              <div class="panel-layout">
+                <div class="panel-info">
+                  <div class="subject-header">
+                    <span class="panel-badge it-badge">Web & Office Systems</span>
+                    <h3>Information Technology (IT)</h3>
+                  </div>
+                  <p class="panel-text">
+                    Introduces students to practical productivity software, data management, web layout structuring with HTML/CSS, basic programming operations, and professional digital correspondence.
+                  </p>
+                  <h4 class="curriculum-heading">Key Topics Taught:</h4>
+                  <ul class="curriculum-list">
+                    <li><i class="fas fa-check-circle"></i> Web Design basics: HTML5 tags & CSS3 styling</li>
+                    <li><i class="fas fa-check-circle"></i> Advanced Office: Excel equations, Pivot tables & data entry</li>
+                    <li><i class="fas fa-check-circle"></i> Information Security, password hygiene & safe browsing</li>
+                    <li><i class="fas fa-check-circle"></i> IT Applications: Digital documentation & presentation building</li>
+                    <li><i class="fas fa-check-circle"></i> Introduction to Operating Systems and File Configurations</li>
+                  </ul>
+                </div>
+                
+                <div class="panel-demo">
+                  <div class="demo-box glass-card border-it">
+                    <div class="demo-header">
+                      <span class="demo-title"><i class="fab fa-html5"></i> Web Rendering Sandbox</span>
+                    </div>
+                    <div class="demo-body html-panel">
+                      <textarea id="html-code" class="code-font" rows="5">&lt;div style="background: linear-gradient(135deg, #00f2fe, #4facfe); padding: 15px; border-radius: 8px; color: white; text-align: center; font-family: sans-serif;"&gt;
+  &lt;h4 style="margin: 0;"&gt;Hello Class!&lt;/h4&gt;
+  &lt;p style="margin: 5px 0 0;"&gt;Welcome to IT Lab.&lt;/p&gt;
+&lt;/div&gt;</textarea>
+                      <button class="btn btn-demo-run" id="btn-render-html">Render Canvas <i class="fas fa-eye"></i></button>
+                      <div class="html-preview-box" id="html-preview">
+                        <div style="background: linear-gradient(135deg, #00f2fe, #4facfe); padding: 15px; border-radius: 8px; color: white; text-align: center; font-family: sans-serif;">
+                          <h4 style="margin: 0;">Hello Class!</h4>
+                          <p style="margin: 5px 0 0;">Welcome to IT Lab.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEM Lab Tab Content -->
+            <div class="lab-panel" id="panel-stem">
+              <div class="panel-layout">
+                <div class="panel-info">
+                  <div class="subject-header">
+                    <span class="panel-badge stem-badge">Maker Education & IoT</span>
+                    <h3>STEM & IoT Maker Lab</h3>
+                  </div>
+                  <p class="panel-text">
+                    Nurtures spatial design, electronics prototyping, and robotics logic. Encourages students to apply science and math concepts by constructing physical devices, circuits, and sensors.
+                  </p>
+                  <h4 class="curriculum-heading">Key Topics Taught:</h4>
+                  <ul class="curriculum-list">
+                    <li><i class="fas fa-check-circle"></i> Circuit Prototypes: Breadboard layouts, resistors, capacitors</li>
+                    <li><i class="fas fa-check-circle"></i> Arduino & ESP32 Programming: Interfacing sensor modules</li>
+                    <li><i class="fas fa-check-circle"></i> Robotics Logic: Actuators, DC/Servo motor configurations</li>
+                    <li><i class="fas fa-check-circle"></i> IoT Systems: Gathering and graphing sensor feeds over Wi-Fi</li>
+                    <li><i class="fas fa-check-circle"></i> 3D CAD design models & hardware assembly methods</li>
+                  </ul>
+                </div>
+                
+                <div class="panel-demo">
+                  <div class="demo-box glass-card border-stem">
+                    <div class="demo-header">
+                      <span class="demo-title"><i class="fas fa-microchip"></i> Interactive Circuit Simulator</span>
+                    </div>
+                    <div class="demo-body stem-panel">
+                      <div class="circuit-diagram">
+                        <div class="circuit-battery">
+                          <i class="fas fa-car-battery battery-icon"></i>
+                          <span>5V Source</span>
+                        </div>
+                        <div class="circuit-wire-line" id="wire-1"></div>
+                        <button class="circuit-switch" id="circuit-btn-switch">
+                          <i class="fas fa-toggle-off" id="switch-icon"></i>
+                          <span>SWITCH</span>
+                        </button>
+                        <div class="circuit-wire-line" id="wire-2"></div>
+                        <div class="circuit-led" id="circuit-led-bulb">
+                          <i class="far fa-lightbulb led-icon" id="led-bulb-icon"></i>
+                          <span>LED</span>
+                        </div>
+                      </div>
+                      <div class="circuit-status code-font">
+                        State: <span id="circuit-state" class="text-off">OPEN CIRCUIT (OFF)</span>
+                      </div>
+                      <p class="circuit-hint">Click the SWITCH button above to toggle current flow and light the diode!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Timeline -->
+    <section id="experience" class="section timeline-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03. Career & Academics</span>
+          <h2 class="section-title">Timeline & Milestones</h2>
+        </div>
+        
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          
+          <!-- sd public school -->
+          <div class="timeline-item right-item" data-timeline-type="work">
+            <div class="timeline-dot bg-glow-green"><i class="fas fa-briefcase"></i></div>
+            <div class="timeline-content glass-card">
+              <div class="time-header">
+                <span class="time-duration">12 August 2026 – Present</span>
+                <span class="time-tag work-tag">Current Role</span>
+              </div>
+              <h3 class="timeline-title">PGT A.I & STEM Teacher</h3>
+              <h4 class="timeline-subtitle">S.D. Public School, Babhanauli, Kushinagar</h4>
+              <p class="timeline-text">
+                Teaching Artificial Intelligence, STEM, and Computer Science subjects to middle and senior secondary students. Conducting hands-on STEM activities, robotics and coding sessions, project-based learning, and practical demonstrations. Guiding students in problem-solving, innovation, computational thinking, and real-world technology applications while assessing their progress through practical projects and classroom activities.
+              </p>
+            </div>
+          </div>
+
+          <!-- sd mother school -->
+          <div class="timeline-item left-item" data-timeline-type="work">
+            <div class="timeline-dot bg-glow-cyan"><i class="fas fa-briefcase"></i></div>
+            <div class="timeline-content glass-card">
+              <div class="time-header">
+                <span class="time-duration">01 April 2025 – 11 August 2026</span>
+                <span class="time-tag work-tag">Previous Role</span>
+              </div>
+              <h3 class="timeline-title">PGT Computer Science & AI Teacher</h3>
+              <h4 class="timeline-subtitle">S.D Mother School, Ramnagar, Ambedkar Nagar</h4>
+              <p class="timeline-text">
+                Teaching Computer Science and Artificial Intelligence curriculums to senior secondary students (9th to 12th grade). Conducting code syntax testing, algorithmic model construction, and grading digital system modules.
+              </p>
+            </div>
+          </div>
+          
+          <!-- gurukul international academy -->
+          <div class="timeline-item right-item" data-timeline-type="work">
+            <div class="timeline-dot bg-glow-cyan"><i class="fas fa-briefcase"></i></div>
+            
+            <!-- Visual flip card (left side) -->
+            <div class="timeline-visual">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="/assets/id-front.jpg" alt="Identity Card Front">
+                </div>
+                <div class="flip-card-back">
+                  <img src="/assets/id-back.jpg" alt="Identity Card Back">
+                </div>
+              </div>
+            </div>
+
+            <!-- Content card (right side) -->
+            <div class="timeline-content glass-card">
+              <div class="time-header">
+                <span class="time-duration">1 April 2024 – 31 March 2025</span>
+                <span class="time-tag work-tag">Previous Role</span>
+              </div>
+              <h3 class="timeline-title">PGT Informatics Practices (IP) & IT Teacher</h3>
+              <h4 class="timeline-subtitle">Dr Shiv Sahai Singh Gurukul International Academy</h4>
+              <p class="timeline-text">
+                Instructed senior level classes (9th to 12th grade) on database management structures (MySQL), data manipulation APIs using python libraries (Pandas, NumPy, Matplotlib), and networks routing logic.
+              </p>
+            </div>
+          </div>
+
+          <!-- joshi institute -->
+          <div class="timeline-item left-item" data-timeline-type="work">
+            <div class="timeline-dot bg-glow-cyan"><i class="fas fa-briefcase"></i></div>
+            
+            <!-- Content card (left side) -->
+            <div class="timeline-content glass-card">
+              <div class="time-header">
+                <span class="time-duration">1 April 2023 – 31 March 2024</span>
+                <span class="time-tag work-tag">Instruction</span>
+              </div>
+              <h3 class="timeline-title">IT Instructor</h3>
+              <h4 class="timeline-subtitle">Joshi Institute of Information Technology, Akbarpur, Ambedkar Nagar</h4>
+              <p class="timeline-text">
+                Taught courses like CCC, O-Level, and delivered introductory computer literacy training, word processors, spreadsheet calculations, internet operations, and desktop folder configurations.
+              </p>
+            </div>
+
+            <!-- Visual card (right side) -->
+            <div class="timeline-visual">
+              <div class="visual-card">
+                <img src="/assets/joshi-id.jpg" alt="Joshi Institute Faculty ID Card">
+              </div>
+            </div>
+          </div>
+
+          <!-- btech -->
+          <div class="timeline-item right-item" data-timeline-type="edu">
+            <div class="timeline-dot bg-glow-purple"><i class="fas fa-graduation-cap"></i></div>
+
+            <!-- Visual flip card (left side) -->
+            <div class="timeline-visual">
+              <div class="flip-card-inner landscape">
+                <div class="flip-card-front">
+                  <img src="/assets/btech-id-front.jpg" alt="B.Tech ID Card Front">
+                </div>
+                <div class="flip-card-back">
+                  <img src="/assets/btech-id-back.jpg" alt="B.Tech ID Card Back">
+                </div>
+              </div>
+            </div>
+
+            <!-- Content card (right side) -->
+            <div class="timeline-content glass-card">
+              <div class="time-header">
+                <span class="time-duration">07/2019 – 09/2023</span>
+                <span class="time-tag edu-tag">B.Tech</span>
+              </div>
+              <h3 class="timeline-title">B.Tech in Computer Science & Engineering</h3>
+              <h4 class="timeline-subtitle">Dr. Ram Manohar Lohia Avadh University, Ayodhya, U.P.</h4>
+              <div class="education-metrics">
+                <span class="metric-score">Score: 77%</span>
+                <span class="metric-award">Honors in CSE</span>
+              </div>
+              <p class="timeline-text">
+                Acquired foundational competencies in computer structures, algorithm optimization, software engineering, databases, and programming frameworks.
+              </p>
+            </div>
+          </div>
+
+          <!-- intermediate -->
+          <div class="timeline-item left-item" data-timeline-type="edu">
+            <div class="timeline-dot bg-glow-orange"><i class="fas fa-school"></i></div>
+            
+            <!-- Content card (left side) -->
+            <div class="timeline-content glass-card">
+              <div class="time-header">
+                <span class="time-duration">Graduated 2018</span>
+                <span class="time-tag edu-tag">Intermediate</span>
+              </div>
+              <h3 class="timeline-title">Intermediate (Class XII)</h3>
+              <h4 class="timeline-subtitle">Jawahar Navodaya Vidyalaya, Ambedkar Nagar</h4>
+              <div class="education-metrics">
+                <span class="metric-score">Score: 64%</span>
+                <span class="metric-stream">Science & Math</span>
+              </div>
+              <p class="timeline-text">
+                Selected for residential school program for high-achieving rural students. Developed basic scientific investigation methods.
+              </p>
+            </div>
+
+            <!-- Visual card (right side) -->
+            <div class="timeline-visual">
+              <div class="visual-card jnv-landscape">
+                <img src="/assets/jnv-id.jpg" alt="JNV ID Card">
+              </div>
+            </div>
+          </div>
+
+          <!-- highschool -->
+          <div class="timeline-item right-item" data-timeline-type="edu">
+            <div class="timeline-dot bg-glow-orange"><i class="fas fa-school"></i></div>
+
+            <!-- Visual card (left side) -->
+            <div class="timeline-visual">
+              <div class="visual-card jnv-landscape">
+                <img src="/assets/jnv-id.jpg" alt="JNV ID Card">
+              </div>
+            </div>
+
+            <!-- Content card (right side) -->
+            <div class="timeline-content glass-card">
+              <div class="time-header">
+                <span class="time-duration">Graduated 2016</span>
+                <span class="time-tag edu-tag">High School</span>
+              </div>
+              <h3 class="timeline-title">High School (Class X)</h3>
+              <h4 class="timeline-subtitle">Jawahar Navodaya Vidyalaya, Ambedkar Nagar</h4>
+              <div class="education-metrics">
+                <span class="metric-score">Score: 85%</span>
+              </div>
+              <p class="timeline-text">
+                Completed secondary school course modules. Excled in general mathematics and computer operations projects.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Breakdown Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04. Skill Set</span>
+          <h2 class="section-title">Technical Expertise</h2>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Programming languages -->
+          <div class="skill-category glass-card">
+            <div class="category-header">
+              <i class="fas fa-code text-cyan"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Python (Pandas, NumPy, OOP)</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill bg-cyan" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>JavaScript (ES6+, DOM API)</span>
+                  <span>75%</span>
+                </div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill bg-cyan" style="width: 75%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>HTML5 & CSS3</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill bg-cyan" style="width: 85%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>SQL (Joins, Aggregations, DBMS)</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill bg-cyan" style="width: 80%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Frameworks -->
+          <div class="skill-category glass-card">
+            <div class="category-header">
+              <i class="fas fa-toolbox text-purple"></i>
+              <h3>Tools & Concepts</h3>
+            </div>
+            <div class="skill-tags-group">
+              <span class="skill-badge-large"><i class="fab fa-git-alt"></i> Git</span>
+              <span class="skill-badge-large"><i class="fab fa-github"></i> GitHub</span>
+              <span class="skill-badge-large"><i class="fas fa-terminal"></i> VS Code</span>
+              <span class="skill-badge-large"><i class="fas fa-network-wired"></i> Postman</span>
+              <span class="skill-badge-large"><i class="fab fa-chrome"></i> Chrome DevTools</span>
+              <span class="skill-badge-large"><i class="fas fa-bezier-curve"></i> Custom Hooks</span>
+              <span class="skill-badge-large"><i class="fas fa-cubes"></i> Component Architecture</span>
+              <span class="skill-badge-large"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Productivity & Management -->
+          <div class="skill-category glass-card">
+            <div class="category-header">
+              <i class="fas fa-briefcase text-orange"></i>
+              <h3>IT Apps & Office Admin</h3>
+            </div>
+            <div class="skill-bars">
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Spreadsheets & Data Entry</span>
+                  <span>95%</span>
+                </div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill bg-orange" style="width: 95%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>Office Administration & Docs</span>
+                  <span>90%</span>
+                </div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill bg-orange" style="width: 90%"></div></div>
+              </div>
+              <div class="skill-bar-wrapper">
+                <div class="skill-info">
+                  <span>File Management & Reports</span>
+                  <span>85%</span>
+                </div>
+                <div class="skill-progress-bg"><div class="skill-progress-fill bg-orange" style="width: 85%"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05. Creations & Platforms</span>
+          <h2 class="section-title">Guided & Developed Projects</h2>
+        </div>
+        
+        <div class="projects-grid">
+          <!-- Teachment -->
+          <article class="project-card glass-card">
+            <div class="project-media">
+              <img src="/assets/stem-lab.png" alt="Teachment - Teacher Hiring Platform" class="project-img">
+              <div class="project-overlay">
+                <span class="role-tag">Founder & Product Lead</span>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-name"><a href="http://www.teachment.in" target="_blank" rel="noopener">Teachment.in <i class="fas fa-external-link-alt link-ico"></i></a></h3>
+              <p class="project-description">
+                An innovative hiring web platform designed to streamline educator recruitment and verify pedagogical skills, connecting high-caliber teachers with academic institutions.
+              </p>
+              <div class="project-tech-tags">
+                <span>Frontend UI</span>
+                <span>Product Design</span>
+                <span>Recruitment Tech</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Priyesh Academy -->
+          <article class="project-card glass-card">
+            <div class="project-media">
+              <img src="/assets/ai-concept.png" alt="Priyesh Academy - AI online courses" class="project-img">
+              <div class="project-overlay">
+                <span class="role-tag">Creator (Full AI No-Code)</span>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-name"><a href="https://priyesh-academy.vercel.app/" target="_blank" rel="noopener">Priyesh Academy <i class="fas fa-external-link-alt link-ico"></i></a></h3>
+              <p class="project-description">
+                An AI-powered course and academy management platform. Fully structured with modern AI components to deliver digital courses and automate quiz/evaluation creation.
+              </p>
+              <div class="project-tech-tags">
+                <span>AI Engineering</span>
+                <span>Vercel Host</span>
+                <span>No-Code Platform</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Swiggy Clone -->
+          <article class="project-card glass-card">
+            <div class="project-media">
+              <img src="/assets/food-delivery.jpg" alt="Food ordering application UI" class="project-img">
+              <div class="project-overlay">
+                <span class="role-tag">Frontend Developer</span>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-name"><a href="https://priyesh-rj.github.io/Swiggy_clone/" target="_blank" rel="noopener">Food Delivery Web App <i class="fas fa-external-link-alt link-ico"></i></a></h3>
+              <p class="project-description">
+                A highly responsive frontend replica of the Swiggy interface built to practice complex CSS configurations, interactive shopping carts, and dynamic search filter lists.
+              </p>
+              <div class="project-tech-tags">
+                <span>HTML5 / CSS3</span>
+                <span>JavaScript ES6</span>
+                <span>GitHub Pages</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CrossFingerz -->
+          <article class="project-card glass-card">
+            <div class="project-media">
+              <img src="/assets/crossfingerz.jpg" alt="CrossFingerz Wish Wall" class="project-img">
+              <div class="project-overlay">
+                <span class="role-tag">Creator & Developer</span>
+              </div>
+            </div>
+            <div class="project-details">
+              <h3 class="project-name"><a href="https://www.crossfingerz.com/" target="_blank" rel="noopener">CrossFingerz.com <i class="fas fa-external-link-alt link-ico"></i></a></h3>
+              <p class="project-description">
+                A public wish wall where anyone can release a wish into the sky and read the wishes of others. CrossFingerz — Write a wish. Release it into the universe.
+              </p>
+              <div class="project-tech-tags">
+                <span>Interactive UI</span>
+                <span>Cosmic Theme</span>
+                <span>Web Platform</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Badge Hub -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">06. Verification & Contact</span>
+          <h2 class="section-title">Get in Touch</h2>
+        </div>
+        
+        <div class="contact-grid">
+          <!-- Interactive Badge Card -->
+          <div class="badge-wrapper">
+            <div class="id-badge-3d" id="id-badge">
+              <div class="badge-header">
+                <div class="badge-chip"></div>
+                <div class="badge-firm">&lt;Priyesh.Raj /&gt;</div>
+              </div>
+              <div class="badge-body">
+                <img src="/assets/avatar.jpg" alt="Priyesh Raj Photo" class="badge-avatar">
+                <div class="badge-main-info">
+                  <h3>Priyesh Raj</h3>
+                  <p class="badge-role">PGT AI & STEM Educator</p>
+                  <p class="badge-org">S.D. Public School</p>
+                </div>
+              </div>
+              <div class="badge-footer">
+                <div class="badge-meta-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>hiipriyesh@gmail.com</span>
+                </div>
+                <div class="badge-meta-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>+91-6393373865</span>
+                </div>
+                <div class="badge-meta-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Ambedkar Nagar, UP, IN</span>
+                </div>
+                <div class="badge-barcode"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-panel-info glass-card">
+            <h3 class="panel-subtitle">Teacher Contact Portal</h3>
+            <p class="contact-intro">
+              Interested in collaborating, seeking academic mentorship, or discussing STEM project structures? Drop a line using the portal below or send an direct inquiry.
+            </p>
+            
+            <form id="contact-form" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Your Name</label>
+                  <input type="text" id="form-name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Email Address</label>
+                  <input type="email" id="form-email" placeholder="john@example.com" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" placeholder="Inquiry about STEM Lab mentorship" required>
+              </div>
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" rows="4" placeholder="Hi Priyesh, I would love to learn more about your lesson plans..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" id="btn-submit-form">Send Message <i class="fas fa-paper-plane"></i></button>
+              <div id="form-feedback" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Academic Declaration Card -->
+        <div class="declaration-card glass-card">
+          <div class="dec-header">
+            <i class="fas fa-certificate dec-icon"></i>
+            <h3>Official Declaration</h3>
+          </div>
+          <p class="dec-text">
+            "I hereby declare that all the information furnished above is true to the best of my knowledge & belief. Documentary evidences will support them as and when required."
+          </p>
+          <div class="dec-footer">
+            <div class="dec-place"><strong>Place:</strong> Ambedkar Nagar, India</div>
+            <div class="dec-sig">Priyesh Raj</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Priyesh Raj. Designed with premium visual interactions.</p>
+      <div class="footer-links">
+        <a href="#hero">Back to Top <i class="fas fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Scripts -->
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
